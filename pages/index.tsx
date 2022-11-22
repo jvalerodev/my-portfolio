@@ -1,8 +1,15 @@
+import Background from '@/components/Layout/Background';
+import Layout from '@/components/Layout';
+
 const Home = () => {
   return (
-    <div>
-      <h1>My Portfolio</h1>
-    </div>
+    <Background>
+      <Layout>
+        <div>
+          <h1>My Portfolio</h1>
+        </div>
+      </Layout>
+    </Background>
   );
 };
 

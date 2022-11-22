@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #000 0%, #000 100%);
+  overflow: hidden;
+}
+
+@keyframes starAnimation {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
