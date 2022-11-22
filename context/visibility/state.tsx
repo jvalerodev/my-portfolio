@@ -24,7 +24,7 @@ const VisibilityState = ({ children }: Props) => {
   return (
     <VisibilityContext.Provider
       value={{
-        visibleEntry: state,
+        visibleEntry: state.visibleEntry,
         setVisibleEntry
       }}
     >

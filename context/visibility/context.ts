@@ -1,8 +1,7 @@
-import { Visibility } from '@/types/typings';
 import { createContext } from 'react';
 
 type VisibilityProps = {
-  visibleEntry: Visibility;
+  visibleEntry: string;
   setVisibleEntry: (entry: string) => void;
 };
 
