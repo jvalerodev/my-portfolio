@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 interface Props {
   children: JSX.Element[];
@@ -7,15 +8,19 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="h-screen overflow-y-auto scroll-smooth">
-      <div className="w-4/5 xl:w-3/5 mx-auto">
-        <Header />
+    <>
+      <SEO />
 
-        <main>{children}</main>
+      <div className="h-screen overflow-y-auto scroll-smooth">
+        <div className="w-4/5 xl:w-3/5 mx-auto">
+          <Header />
 
-        <Footer />
+          <main>{children}</main>
+
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
