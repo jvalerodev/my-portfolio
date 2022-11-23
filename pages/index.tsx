@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import Presentation from '@/components/Main/Presentation';
 import About from '@/components/Main/About';
 import Services from '@/components/Main/Services';
+import Portfolio from '@/components/Main/Portfolio';
 
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
         <About />
 
         <Services />
+
+        <Portfolio />
       </Layout>
     </Background>
   );

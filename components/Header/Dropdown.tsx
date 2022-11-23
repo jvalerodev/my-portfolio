@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import Link from 'next/link';
 import useVisibility from '@/hooks/useVisibility';
-import { NavMenu, NavItem } from './Menu';
+import { NavMenu, NavItem } from './styles';
 
 interface Props {
   open: boolean;
