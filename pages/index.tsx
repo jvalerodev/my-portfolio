@@ -11,13 +11,9 @@ const Home = () => {
     <Background>
       <Layout>
         <Presentation />
-
         <About />
-
         <Services />
-
         <Portfolio />
-
         <Contact />
       </Layout>
     </Background>

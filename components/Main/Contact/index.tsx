@@ -1,4 +1,5 @@
 import useObserver from '@/hooks/useObserver';
+import ContactForm from './ContactForm';
 import ContactCard from './ContactCard';
 
 const Contact = () => {
@@ -11,6 +12,8 @@ const Contact = () => {
       </h2>
 
       <div className="bg-black mt-12 p-2 md:grid grid-cols-2 gap-x-10">
+        <ContactForm />
+
         <ContactCard />
       </div>
     </div>
