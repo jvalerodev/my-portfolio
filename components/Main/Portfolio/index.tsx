@@ -1,11 +1,22 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import { FaRegEye, FaCode } from 'react-icons/fa';
 import useObserver from '@/hooks/useObserver';
-import { Container, Info, Content } from './styles';
 import { projects } from './data';
+import ViewProjects from './ViewProjects';
+import { Container, Info, Content } from './styles';
 
 const Portfolio = () => {
   const { ref } = useObserver();
+  const [visible, setVisible] = useState(6);
+
+  const handleVisible = (n: number) => {
+    setVisible(n);
+
+    projects.slice(6).map((project) => {
+      project.style = n === 6 ? 'h-0 opacity-0' : 'h-[185px] opacity-100';
+    });
+  };
 
   return (
     <div id="portfolio" className="pt-36" ref={ref}>
@@ -15,8 +26,8 @@ const Portfolio = () => {
 
       <div className="bg-black grid sm:grid-cols-2 lg:grid-cols-3 gap-y-9 gap-x-9 items-center mt-12 p-2">
         {projects.map(
-          ({ name, image, viewUrl, viewLabel, codeUrl, codeLabel }) => (
-            <Container key={name}>
+          ({ name, image, viewUrl, viewLabel, codeUrl, codeLabel, style }) => (
+            <Container key={name} className={style}>
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -24,7 +35,7 @@ const Portfolio = () => {
                 height={1000}
                 placeholder="blur"
                 blurDataURL={image.src}
-                className="rounded-md"
+                className="rounded-md h-full"
               />
 
               <Info>
@@ -55,6 +66,8 @@ const Portfolio = () => {
           )
         )}
       </div>
+
+      <ViewProjects visible={visible} handleVisible={handleVisible} />
     </div>
   );
 };

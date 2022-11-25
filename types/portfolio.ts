@@ -8,4 +8,5 @@ export type Project = {
   viewLabel: string;
   codeUrl: string;
   codeLabel: string;
+  style?: string;
 };

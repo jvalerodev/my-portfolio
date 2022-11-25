@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   position: relative;
   display: block;
+  transition: all 0.4s ease;
+  overflow: hidden;
 `;
 
 export const Info = styled.div`
