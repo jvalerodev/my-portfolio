@@ -29,10 +29,10 @@ const About = () => {
           </h2>
 
           <p className="mt-5">
-            I am a systems engineering student. I love the development of
-            applications and web pages. I like to develop using the best
-            practices, with clean and efficient code. Highly focused on being a
-            better programmer every day. Here is some information about me:
+            I am a fullstack developer with 2 years of experience developing web
+            applications. I like to develop using the best practices, with clean
+            and efficient code. Highly focused on being a better programmer
+            every day. Here is some information about me:
           </p>
 
           <ul className="mt-5">
