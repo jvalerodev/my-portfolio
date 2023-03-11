@@ -5,10 +5,10 @@ const TypeText = () => {
     <Typewriter
       onInit={(typewriter) => {
         typewriter
-          .typeString('Jesús Valero. ')
+          .typeString('Jesús Valero.')
           .pauseFor(3000)
           .deleteAll()
-          .typeString('Web Developer. ')
+          .typeString('Fullstack Developer.')
           .pauseFor(3000)
           .start();
       }}

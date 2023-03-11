@@ -20,10 +20,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-black p-3 mt-40 text-center sm:text-base text-sm">
-        <p>
-          Copyright &copy; {new Date().getFullYear()} Jesús Valero | All Rights
-          Reserved.
-        </p>
+        <p className="font-bold">Made with ❤️</p>
       </div>
     </footer>
   );

@@ -3,11 +3,17 @@ import Image from 'next/image';
 import useObserver from '@/hooks/useObserver';
 import Writer from './TypeText';
 
+const yearsOfExperience = new Date().getFullYear() - 2021;
+
 const Presentation = () => {
   const { ref } = useObserver();
 
   return (
-    <div id="home" className="pt-36" ref={ref}>
+    <div
+      id="home"
+      className="flex justify-center items-center h-screen"
+      ref={ref}
+    >
       <div className="md:flex justify-between items-center">
         <div className="md:w-1/2">
           <p className="text-2xl text-green-500 font-bold uppercase">
@@ -21,8 +27,10 @@ const Presentation = () => {
           </div>
 
           <p className="mt-5 font-light">
-            I am a web developer in constant growth. I like to learn new things
-            and develop using modern technologies.
+            Developer with {yearsOfExperience} years of experience developing
+            web applications. I have skills in scalable web application
+            development and teamwork, always looking for new ways to improve
+            efficiency and productivity.
           </p>
 
           <Link

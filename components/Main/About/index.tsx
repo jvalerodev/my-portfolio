@@ -4,6 +4,7 @@ import useObserver from '@/hooks/useObserver';
 const today = new Date().valueOf();
 const birthDate = new Date('02/17/2000').valueOf();
 const age = Math.floor((today - birthDate) / (1000 * 60 * 60 * 24 * 365));
+const yearsOfExperience = new Date().getFullYear() - 2021;
 
 const About = () => {
   const { ref } = useObserver();
@@ -25,14 +26,14 @@ const About = () => {
 
         <div className="lg:w-1/2 leading-7 mt-10 lg:mt-0">
           <h2 className="text-3xl font-bold text-center">
-            Hello, I am <span className="text-green-500">Web Developer</span>
+            About <span className="text-green-500">Me</span>
           </h2>
 
           <p className="mt-5">
-            I am a fullstack developer with 2 years of experience developing web
-            applications. I like to develop using the best practices, with clean
-            and efficient code. Highly focused on being a better programmer
-            every day. Here is some information about me:
+            I have {yearsOfExperience} years of experience in technologies such
+            as React, Next.js and Node.js. I like to develop using the best
+            practices, with clean and efficient code. Highly focused on being a
+            better programmer every day. Here is some information about me:
           </p>
 
           <ul className="mt-5">
