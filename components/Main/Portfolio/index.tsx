@@ -6,7 +6,6 @@ import { FaRegEye, FaCode } from 'react-icons/fa';
 import useObserver from '@/hooks/useObserver';
 import { projects } from './data';
 import ViewProjects from './ViewProjects';
-import { Container, Info, Content } from './styles';
 
 const Portfolio = () => {
   const { ref } = useObserver();
@@ -29,7 +28,10 @@ const Portfolio = () => {
       <div className="bg-black grid sm:grid-cols-2 lg:grid-cols-3 gap-y-9 gap-x-9 items-center mt-12 p-2">
         {projects.map(
           ({ name, image, viewUrl, viewLabel, codeUrl, codeLabel, style }) => (
-            <Container key={name} className={style}>
+            <div
+              key={name}
+              className={`group relative block overflow-hidden transition-all duration-400 ${style ?? ''}`}
+            >
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -40,8 +42,8 @@ const Portfolio = () => {
                 className="rounded-md h-full"
               />
 
-              <Info>
-                <Content>
+              <div className="absolute inset-0 bg-green-500 opacity-0 rounded-md transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <h3 className="font-bold text-lg mb-3 text-center">{name}</h3>
                   <div className="flex justify-center items-center space-x-8">
                     <a
@@ -62,9 +64,9 @@ const Portfolio = () => {
                       <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
                     </a>
                   </div>
-                </Content>
-              </Info>
-            </Container>
+                </div>
+              </div>
+            </div>
           )
         )}
       </div>
