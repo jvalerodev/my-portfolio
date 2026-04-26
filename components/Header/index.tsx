@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import Dropdown from './Dropdown';
 import Navbar from './Navbar';

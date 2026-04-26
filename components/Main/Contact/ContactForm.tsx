@@ -1,3 +1,5 @@
+'use client';
+
 import Alert from '@/components/Alert';
 import Spinner from '@/components/Spinner';
 import useContact from '@/hooks/useContact';

@@ -1,3 +1,5 @@
+'use client';
+
 import { Dispatch, SetStateAction } from 'react';
 import Link from 'next/link';
 import useVisibility from '@/hooks/useVisibility';
@@ -16,7 +18,7 @@ const Dropdown = ({ open, setOpen }: Props) => {
   };
 
   return (
-    <NavMenu active={open}>
+    <NavMenu $active={open}>
       <Link href="/#home">
         <NavItem
           className={`${visibleEntry === '#home' && 'text-black'}`}

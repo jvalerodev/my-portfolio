@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NavMenu = styled.nav<{ active: boolean }>`
+export const NavMenu = styled.nav<{ $active: boolean }>`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -16,8 +16,8 @@ export const NavMenu = styled.nav<{ active: boolean }>`
   padding: 1rem 0;
   row-gap: 10px;
 
-  ${({ active }) =>
-    active &&
+  ${({ $active }) =>
+    $active &&
     `
     @media (max-width: 1023px) {
       background-color: rgb(34, 197, 94);
@@ -35,9 +35,9 @@ export const NavItem = styled.p`
   margin: 0 1rem;
   padding: 5px;
   font-weight: bold;
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-    backdrop-filter;
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   padding-left: 0.75rem;

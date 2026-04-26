@@ -1,7 +1,9 @@
+'use client';
+
 import { StarsContainer, Stars1, Stars2, Stars3 } from './Stars';
 
 interface Props {
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 const Background = ({ children }: Props) => {

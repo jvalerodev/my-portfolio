@@ -1,3 +1,5 @@
+'use client';
+
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 
 interface Props {

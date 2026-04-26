@@ -1,3 +1,5 @@
+'use client';
+
 import useObserver from '@/hooks/useObserver';
 import { services } from './data';
 

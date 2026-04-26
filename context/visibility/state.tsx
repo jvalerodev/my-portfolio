@@ -1,10 +1,12 @@
+'use client';
+
 import { useReducer } from 'react';
 import VisibilityContext from '@/context/visibility/context';
 import VisibilityReducer from '@/context/visibility/reducer';
 import { Visibility } from '@/types/typings';
 
 interface Props {
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 const INITIAL_STATE: Visibility = {

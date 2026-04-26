@@ -1,3 +1,5 @@
+'use client';
+
 import useObserver from '@/hooks/useObserver';
 import ContactForm from './ContactForm';
 import ContactCard from './ContactCard';
