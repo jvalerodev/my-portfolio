@@ -28,7 +28,7 @@ const ContactForm = () => {
           type="text"
           id="name"
           placeholder="Name *"
-          className="bg-transparent px-3 py-2 w-full outline-none border border-white transition focus:border-green-500"
+          className="bg-transparent px-3 py-2 w-full outline-hidden border border-white transition focus:border-green-500"
           {...register('name')}
         />
       </div>
@@ -43,7 +43,7 @@ const ContactForm = () => {
             type="text"
             id="email"
             placeholder="Email *"
-            className="bg-transparent px-3 py-2 w-full outline-none border border-white transition focus:border-green-500"
+            className="bg-transparent px-3 py-2 w-full outline-hidden border border-white transition focus:border-green-500"
             {...register('email')}
           />
         </div>
@@ -57,7 +57,7 @@ const ContactForm = () => {
             type="text"
             id="subject"
             placeholder="Subject *"
-            className="bg-transparent px-3 py-2 w-full outline-none border border-white transition focus:border-green-500"
+            className="bg-transparent px-3 py-2 w-full outline-hidden border border-white transition focus:border-green-500"
             {...register('subject')}
           />
         </div>
@@ -69,7 +69,7 @@ const ContactForm = () => {
         <textarea
           id="msg"
           placeholder="Your message... *"
-          className="block bg-transparent px-3 py-2 w-full h-36 resize-none outline-none border border-white transition focus:border-green-500"
+          className="block bg-transparent px-3 py-2 w-full h-36 resize-none outline-hidden border border-white transition focus:border-green-500"
           {...register('msg')}
         ></textarea>
       </div>

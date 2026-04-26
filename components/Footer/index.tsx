@@ -12,7 +12,7 @@ const Footer = () => {
             rel="noreferrer"
             aria-label={label}
           >
-            <div className="transition hover:bg-green-500 rounded py-2 px-3 cursor-pointer">
+            <div className="transition hover:bg-green-500 rounded-sm py-2 px-3 cursor-pointer">
               <Icon />
             </div>
           </a>
