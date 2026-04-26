@@ -15,7 +15,7 @@ const Portfolio = () => {
     setVisible(n);
 
     projects.slice(6).map((project) => {
-      project.style = n === 6 ? 'h-0 opacity-0' : 'h-[185px] opacity-100';
+      project.style = n === 6 ? 'h-0 opacity-0' : 'h-[252px] opacity-100';
     });
   };
 
