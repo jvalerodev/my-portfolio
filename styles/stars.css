@@ -1,15 +1,36 @@
 html {
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #000 0%, #000 100%);
+  background: #000;
   overflow: hidden;
 }
 
-@keyframes starAnimation {
-  from {
-    transform: translateY(0px);
-  }
-
-  to {
-    transform: translateY(-2000px);
-  }
+.stars-container {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #000;
+  background-repeat: repeat;
+  background-image:
+    /* Capa 2: estrellas grandes y escasas (tile 900x900) */
+    radial-gradient(1.5px 1.5px at 180px 240px, #fff 99%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 700px 620px, #fff 99%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 420px 780px, #fff 99%, transparent 100%),
+    /* Capa 1: estrellas pequeñas esparcidas (tile 500x500) */
+    radial-gradient(1px 1px at 80px 120px, #fff 99%, transparent 100%),
+    radial-gradient(1px 1px at 380px 60px, #fff 99%, transparent 100%),
+    radial-gradient(1px 1px at 220px 340px, #fff 99%, transparent 100%),
+    radial-gradient(1px 1px at 460px 280px, #fff 99%, transparent 100%),
+    radial-gradient(1px 1px at 140px 440px, #fff 99%, transparent 100%),
+    radial-gradient(1px 1px at 320px 460px, #fff 99%, transparent 100%);
+  background-size:
+    900px 900px,
+    900px 900px,
+    900px 900px,
+    500px 500px,
+    500px 500px,
+    500px 500px,
+    500px 500px,
+    500px 500px,
+    500px 500px;
 }

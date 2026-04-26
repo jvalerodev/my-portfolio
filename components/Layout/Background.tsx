@@ -1,7 +1,3 @@
-'use client';
-
-import { StarsContainer, Stars1, Stars2, Stars3 } from './Stars';
-
 interface Props {
   children: React.ReactNode;
 }
@@ -9,11 +5,7 @@ interface Props {
 const Background = ({ children }: Props) => {
   return (
     <>
-      <StarsContainer>
-        <Stars1 />
-        <Stars2 />
-        <Stars3 />
-      </StarsContainer>
+      <div className="stars-container" aria-hidden="true" />
       {children}
     </>
   );
