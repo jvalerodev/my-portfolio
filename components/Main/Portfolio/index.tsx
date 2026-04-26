@@ -20,7 +20,11 @@ const Portfolio = () => {
   };
 
   return (
-    <div id="portfolio" className="pt-36" ref={ref}>
+    <div
+      id="portfolio"
+      className="min-h-screen flex flex-col justify-center snap-start"
+      ref={ref}
+    >
       <h2 className="text-4xl text-center font-bold uppercase bg-black">
         My <span className="text-green-500">Portfolio</span>
       </h2>

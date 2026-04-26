@@ -7,7 +7,11 @@ const Services = () => {
   const { ref } = useObserver();
 
   return (
-    <div id="services" className="text-center pt-36" ref={ref}>
+    <div
+      id="services"
+      className="min-h-screen flex flex-col justify-center text-center snap-start"
+      ref={ref}
+    >
       <h2 className="bg-black text-4xl font-bold uppercase">
         My <span className="text-green-500">Services</span>
       </h2>

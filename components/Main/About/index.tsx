@@ -12,8 +12,12 @@ const About = () => {
   const { ref } = useObserver();
 
   return (
-    <div id="about" className="pt-36" ref={ref}>
-      <div className="lg:flex lg:space-x-14 items-center bg-black">
+    <div
+      id="about"
+      className="min-h-screen flex items-center snap-start"
+      ref={ref}
+    >
+      <div className="lg:flex lg:space-x-14 items-center bg-black w-full">
         <div className="lg:w-1/2">
           <Image
             src="/img/web-developer.jpg"

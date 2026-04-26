@@ -13,10 +13,10 @@ const Presentation = () => {
   return (
     <div
       id="home"
-      className="flex justify-center items-center h-screen"
+      className="min-h-screen flex justify-center items-center snap-start"
       ref={ref}
     >
-      <div className="md:flex justify-between items-center">
+      <div className="md:flex justify-between items-center w-full">
         <div className="md:w-1/2">
           <p className="text-2xl text-green-500 font-bold uppercase">
             Hi there,
